@@ -63,3 +63,32 @@ Enter NFT Details: Fill in the fields for your NFT's Name, Description, and Imag
 Mint NFT: Click the "Mint" button. Your wallet will prompt you to confirm the transaction.
 
 View Transaction: Once confirmed, you can view the transaction on a blockchain explorer (e.g., Etherscan for Ethereum, PolygonScan for Polygon).
+⚙️ Setup and Installation Follow these steps to get a local copy of the project up and running.
+
+Prerequisites Node.js (v14 or higher recommended)
+
+npm or yarn
+
+A Web3 wallet (e.g., MetaMask) configured for the target network (e.g., Sepolia, Polygon Mumbai, local Hardhat network).
+
+Backend (Smart Contract) Setup Clone the repository:
+
+Install dependencies:
+
+npm install # or yarn install
+
+Configure environment variables: Create a .env file in the root directory and add your private key (for deployment) and API keys (e.g., Alchemy/Infura URL).
+
+Example .env content
+PRIVATE_KEY="YOUR_PRIVATE_KEY_FOR_DEPLOYMENT" ALCHEMY_API_URL_SEPOLIA="YOUR_ALCHEMY_SEPOLIA_URL"
+
+... other network URLs or keys
+Compile the smart contract:
+
+npx hardhat compile # or truffle compile
+
+Deploy the smart contract:
+
+npx hardhat run scripts/deploy.js --network sepolia # or truffle migrate --network sepolia
+
+Note down the deployed contract address.
