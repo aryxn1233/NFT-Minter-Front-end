@@ -34,7 +34,7 @@ Deployment & Tools IPFS / Arweave (Choose one/specify): For decentralized storag
 
 Alchemy / Infura (Choose one/specify): For blockchain node interaction.
 
-Git / GitHub: For version control and hosting.
+you can see visit here https://nft-minter-mint-verse.vercel.app/
 
 Frontend Setup Navigate to the frontend directory:
 
